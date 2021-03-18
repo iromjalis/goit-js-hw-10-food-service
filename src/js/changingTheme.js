@@ -14,12 +14,10 @@ function defaultTheme() {
   if (localStorage.getItem('theme') === Theme.DARK) {
     switchToggle.checked = 'true';
     classChange(Theme.DARK, Theme.LIGHT);
-
     localStorage.setItem('theme', 'dark-theme');
   } else {
     switchToggle.checked = false;
     classChange(Theme.LIGHT, Theme.DARK);
-
     localStorage.setItem('theme', 'light-theme');
   }
 }
@@ -28,11 +26,9 @@ defaultTheme();
 switchToggle.addEventListener('change', e => {
   if (e.target.checked) {
     classChange(Theme.DARK, Theme.LIGHT);
-
     localStorage.setItem('theme', 'dark-theme');
   } else {
     classChange(Theme.LIGHT, Theme.DARK);
-
     localStorage.setItem('theme', 'light-theme');
   }
 });

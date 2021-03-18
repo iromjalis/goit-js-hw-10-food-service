@@ -1,3 +1,3 @@
 import './styles.css';
-import './js/templating.js';
+import './js/template.js';
 import './js/changingTheme.js';
